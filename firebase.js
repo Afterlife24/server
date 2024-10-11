@@ -13,16 +13,30 @@ const { getFirestore } = require('firebase/firestore');
 //   measurementId: "G-K7TP3HFDM0"
 // };
 
+// production database
+// const firebaseConfig = {
+//     apiKey: "AIzaSyCQk1KdAXHzFevM5Atgtl57eHnTzQ12eYI",
+//     authDomain: "token-cab71.firebaseapp.com",
+//     projectId: "token-cab71",
+//     storageBucket: "token-cab71.appspot.com",
+//     messagingSenderId: "610364184109",
+//     appId: "1:610364184109:web:b118083d997124851dcaa4",
+//     measurementId: "G-T9J8H0WNSS"
+//   };
+
+
+// secondproductionchange
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCQk1KdAXHzFevM5Atgtl57eHnTzQ12eYI",
-    authDomain: "token-cab71.firebaseapp.com",
-    projectId: "token-cab71",
-    storageBucket: "token-cab71.appspot.com",
-    messagingSenderId: "610364184109",
-    appId: "1:610364184109:web:b118083d997124851dcaa4",
-    measurementId: "G-T9J8H0WNSS"
-  };
+  apiKey: "AIzaSyD6l1wSl0Wzf2v1FBlPskOYEthSRFAKp58",
+  authDomain: "scanme-372e3.firebaseapp.com",
+  databaseURL: "https://scanme-372e3-default-rtdb.firebaseio.com",
+  projectId: "scanme-372e3",
+  storageBucket: "scanme-372e3.appspot.com",
+  messagingSenderId: "948074886578",
+  appId: "1:948074886578:web:80a62ba4fb8f3d24a3a0ab",
+  measurementId: "G-HBMXG6WXR0"
+};
 
 
 
