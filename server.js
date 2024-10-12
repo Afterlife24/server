@@ -49,7 +49,7 @@ const bodyParser = require('body-parser');
 const { db } = require('./firebase');
 const { collection, addDoc, updateDoc, doc, serverTimestamp } = require('firebase/firestore');
 i=1;
-order_count = 0;
+order_count = 999;
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
@@ -72,7 +72,7 @@ app.post("/sendOrder", async (req, res) => {
         const docRef = await addDoc(collection(db, 'orders'), newOrder);
 
         // Send a JSON response with the token ID
-        res.status(200).json({ message: "Order received successfully", tokenId });
+        res.status(200).json({ message: "yyyyyyyyyyyyyyyyyyyyyyyyOrder received successfully", tokenId });
     } catch (error) {
         res.status(500).json({ error: "Error: " + error.message });
     }
