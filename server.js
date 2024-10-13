@@ -49,7 +49,13 @@ const bodyParser = require('body-parser');
 const { db } = require('./firebase');
 const { collection, addDoc, updateDoc, doc, serverTimestamp } = require('firebase/firestore');
 const app = express();
-app.use(cors());
+const corsOptions = {
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 
