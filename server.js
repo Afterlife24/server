@@ -97,4 +97,3 @@ app.post("/markAsDelivered", async (req, res) => {
     }
 });
 
-module.exports = app;
