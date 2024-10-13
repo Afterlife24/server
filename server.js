@@ -43,6 +43,9 @@
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+
+
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -93,11 +96,3 @@ app.post("/markAsDelivered", async (req, res) => {
         res.status(500).json({ error: "Error: " + error.message });
     }
 });
-
-// const PORT = 5000;
-// app.listen(PORT, function() { 
-//     console.log(`Server is running on port ${PORT}`);
-// });
-
-
-module.exports = app;
