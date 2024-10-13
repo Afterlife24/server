@@ -50,10 +50,11 @@ const { db } = require('./firebase');
 const { collection, addDoc, updateDoc, doc, serverTimestamp } = require('firebase/firestore');
 const app = express();
 const corsOptions = {
-    origin: '*',
+    origin: ['https://client-client.gofastapi.com', 'https://scanme-scanme.gofastapi.com'], // Replace with actual frontends
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 };
+
 
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
