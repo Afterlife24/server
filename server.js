@@ -96,3 +96,5 @@ app.post("/markAsDelivered", async (req, res) => {
         res.status(500).json({ error: "Error: " + error.message });
     }
 });
+
+module.exports = app;
