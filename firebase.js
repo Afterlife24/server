@@ -3,15 +3,15 @@ const { getFirestore } = require('firebase/firestore');
 
 
 // scanmeprod-productionFIRESTORE
-// const firebaseConfig = {
-//   apiKey: "AIzaSyBwMWR-QyG3LnkeOmI5_QBbI_FoL_skIHc",
-//   authDomain: "scanmeprod.firebaseapp.com",
-//   projectId: "scanmeprod",
-//   storageBucket: "scanmeprod.appspot.com",
-//   messagingSenderId: "3426314793",
-//   appId: "1:3426314793:web:ec931d424b430196ae4a38",
-//   measurementId: "G-K7TP3HFDM0"
-// };
+const firebaseConfig = {
+  apiKey: "AIzaSyBwMWR-QyG3LnkeOmI5_QBbI_FoL_skIHc",
+  authDomain: "scanmeprod.firebaseapp.com",
+  projectId: "scanmeprod",
+  storageBucket: "scanmeprod.appspot.com",
+  messagingSenderId: "3426314793",
+  appId: "1:3426314793:web:ec931d424b430196ae4a38",
+  measurementId: "G-K7TP3HFDM0"
+};
 
 // production database
 // const firebaseConfig = {
@@ -39,15 +39,7 @@ const { getFirestore } = require('firebase/firestore');
 // };
 
 
-const firebaseConfig = {
-    apiKey: "AIzaSyAdPjzBE2EjsCaTP5aBQ9w1-_TKL2zttw8",
-    authDomain: "tapandcollect-abe43.firebaseapp.com",
-    projectId: "tapandcollect-abe43",
-    storageBucket: "tapandcollect-abe43.appspot.com",
-    messagingSenderId: "835659748911",
-    appId: "1:835659748911:web:effae864ee493a85b798da",
-    measurementId: "G-DE5GCGGHRJ"
-  };
+
 
 
 
