@@ -39,6 +39,29 @@ const { getFirestore } = require('firebase/firestore');
 // };
 
 
+  // const firebaseConfig = {
+  //   apiKey: "AIzaSyAdPjzBE2EjsCaTP5aBQ9w1-_TKL2zttw8",
+  //   authDomain: "tapandcollect-abe43.firebaseapp.com",
+  //   projectId: "tapandcollect-abe43",
+  //   storageBucket: "tapandcollect-abe43.appspot.com",
+  //   messagingSenderId: "835659748911",
+  //   appId: "1:835659748911:web:effae864ee493a85b798da",
+  //   measurementId: "G-DE5GCGGHRJ"
+  // };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   const firebaseConfig = {
     apiKey: "AIzaSyAdPjzBE2EjsCaTP5aBQ9w1-_TKL2zttw8",
     authDomain: "tapandcollect-abe43.firebaseapp.com",
@@ -48,7 +71,6 @@ const { getFirestore } = require('firebase/firestore');
     appId: "1:835659748911:web:effae864ee493a85b798da",
     measurementId: "G-DE5GCGGHRJ"
   };
-
 
 
   const app = initializeApp(firebaseConfig);
