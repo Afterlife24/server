@@ -98,6 +98,3 @@ app.post("/markAsDelivered", async (req, res) => {
 // app.listen(PORT, function() { 
 //     console.log(`Server is running on port ${PORT}`);
 // });
-
-
-module.exports = app;
