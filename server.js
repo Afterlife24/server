@@ -86,44 +86,44 @@ app.post("/sendOrder", async (req, res) => {
     }
 });
 
-// Endpoint to mark an order as delivered
-app.post("/markAsDelivered", async (req, res) => {
-    const { orderId } = req.body;
+// // Endpoint to mark an order as delivered
+// app.post("/markAsDelivered", async (req, res) => {
+//     const { orderId } = req.body;
 
-    try {
-        const orderDoc = doc(db, 'orders', orderId);
-        await updateDoc(orderDoc, { isDelivered: true });
-        res.status(200).json({ message: "Order marked as delivered successfully" });
-    } catch (error) {
-        res.status(500).json({ error: "Error: " + error.message });
-    }
-});
+//     try {
+//         const orderDoc = doc(db, 'orders', orderId);
+//         await updateDoc(orderDoc, { isDelivered: true });
+//         res.status(200).json({ message: "Order marked as delivered successfully" });
+//     } catch (error) {
+//         res.status(500).json({ error: "Error: " + error.message });
+//     }
+// });
 
 
 
-app.post("/reserveTable", async (req, res) => {
-    const { name, phone, date, time, persons } = req.body;
+// app.post("/reserveTable", async (req, res) => {
+//     const { name, phone, date, time, persons } = req.body;
   
-    const reservation = {
-      name,
-      phone,
-      date,
-      time,
-      persons
-    };
+//     const reservation = {
+//       name,
+//       phone,
+//       date,
+//       time,
+//       persons
+//     };
   
-    try {
-      // Save reservation to the Firebase database (assuming 'reservations' collection exists)
-      const docRef = await addDoc(collection(db, 'reservations'), reservation);
-      console.log(reservation);
-      res.status(200).json({ message: "Reservation saved successfully", id: docRef.id });
+//     try {
+//       // Save reservation to the Firebase database (assuming 'reservations' collection exists)
+//       const docRef = await addDoc(collection(db, 'reservations'), reservation);
+//       console.log(reservation);
+//       res.status(200).json({ message: "Reservation saved successfully", id: docRef.id });
         
       
-    } catch (error) {
-      console.error("Error saving reservation:", error);
-      res.status(500).json({ error: "Error: " + error.message });
-    }
-  });
+//     } catch (error) {
+//       console.error("Error saving reservation:", error);
+//       res.status(500).json({ error: "Error: " + error.message });
+//     }
+//   });
 
 // const PORT = 5000;
 // app.listen(PORT, function() { 
